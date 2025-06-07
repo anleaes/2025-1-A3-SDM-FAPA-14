@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'client.apps.ClientConfig',
     'hosting.apps.HostingConfig',
+    'category.apps.CategoryConfig',
 ]
 
 MIDDLEWARE = [
