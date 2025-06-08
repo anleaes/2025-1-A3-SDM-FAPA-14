@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'hosting.apps.HostingConfig',
     'category.apps.CategoryConfig',
     'reservation.apps.ReservationConfig',
+    'reservationhosting.apps.ReservationHostingConfig',
 ]
 
 MIDDLEWARE = [
