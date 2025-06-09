@@ -9,6 +9,7 @@ class Reservation(models.Model):
 
     status = models.CharField(
         'Status',
+        default='PENDING',
         max_length=20,
         choices=[
             ('PENDING', 'Pendente'),
@@ -19,6 +20,7 @@ class Reservation(models.Model):
 
     payment_method = models.CharField(
         'Método de Pagamento',
+        default='CREDIT_CARD',
         max_length=30,
         choices=[
             ('CREDIT_CARD', 'Cartão de Crédito'),
