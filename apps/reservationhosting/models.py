@@ -15,4 +15,4 @@ class ReservationHosting(models.Model):
         ordering = ['id']
 
     def __str__(self):
-        return self.name
+        return f"{self.quantity_days} dia(s) - {self.hosting.name}"
