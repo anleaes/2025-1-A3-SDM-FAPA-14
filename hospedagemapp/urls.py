@@ -24,4 +24,5 @@ urlpatterns = [
     path('categorias/', include('category.urls', namespace='category')),
     path('reservas/', include('reservation.urls', namespace='reservation')),
     path('itens_reserva/', include('reservationhosting.urls', namespace='reservationhosting')),
+    path('avaliacoes/', include('review.urls', namespace='review')),
 ]
