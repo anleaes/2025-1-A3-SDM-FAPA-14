@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'reservationhosting.apps.ReservationHostingConfig',
     'review.apps.ReviewConfig',
     'address.apps.AddressConfig',
+    'amenity.apps.AmenityConfig',
 ]
 
 MIDDLEWARE = [
