@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'reservation.apps.ReservationConfig',
     'reservationhosting.apps.ReservationHostingConfig',
     'review.apps.ReviewConfig',
+    'address.apps.AddressConfig',
 ]
 
 MIDDLEWARE = [
