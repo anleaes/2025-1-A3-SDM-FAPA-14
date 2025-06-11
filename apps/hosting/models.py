@@ -1,14 +1,15 @@
 from django.db import models
 from category.models import Category
+from address.models import Address
 
 # Create your models here.
 class Hosting(models.Model):
     name = models.CharField('Nome', max_length=100)
     description = models.TextField('Descrição', max_length=100)
     daily_price = models.DecimalField('Preço diário', max_digits=10, decimal_places=2)
-    address = models.CharField('Endereco', max_length=200)
     is_available = models.BooleanField('Disponível', default=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, blank=True)
+    address = models.OneToOneField(Address, on_delete=models.CASCADE, null=True, blank=True)
 
     class Meta:
         verbose_name = 'Hospedagem'
