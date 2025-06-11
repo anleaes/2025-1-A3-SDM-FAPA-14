@@ -26,4 +26,5 @@ urlpatterns = [
     path('itens_reserva/', include('reservationhosting.urls', namespace='reservationhosting')),
     path('avaliacoes/', include('review.urls', namespace='review')),
     path('enderecos/', include('address.urls', namespace='address')),
+    path('comodidades/', include('amenity.urls', namespace='amenity')),
 ]
