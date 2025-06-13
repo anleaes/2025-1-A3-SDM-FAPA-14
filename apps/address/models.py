@@ -10,6 +10,7 @@ class Address(models.Model):
     class Meta:
         verbose_name = 'Endereço'
         verbose_name_plural = 'Endereços'
+        ordering = ['id']
 
     def __str__(self):
         return f"{self.street}, {self.city} - {self.state} {self.postal_code}"
