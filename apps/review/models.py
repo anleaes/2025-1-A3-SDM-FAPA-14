@@ -12,6 +12,7 @@ class Review(models.Model):
     class Meta:
         verbose_name = 'Avaliação'
         verbose_name_plural = 'Avaliações'
+        ordering = ['id']
 
     def __str__(self):
         return f"{self.client.name} - {self.rating} estrelas"
