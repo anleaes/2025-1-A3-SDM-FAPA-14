@@ -5,7 +5,7 @@ from client.models import Client
 class Reservation(models.Model):
     checkin_date = models.DateField('Data de Check-in')
     checkout_date = models.DateField('Data de Check-out')
-    total_price = models.DecimalField(max_digits=10, decimal_places=2)
+    total_price = models.DecimalField('Preço Total', max_digits=10, decimal_places=2)
     status = models.CharField(
         'Status',
         default='PENDING',
@@ -27,7 +27,7 @@ class Reservation(models.Model):
             ('PAYMENT_SLIP', 'Boleto')
         ]
     )
-    client = models.ForeignKey(Client, on_delete=models.CASCADE, null=True)
+    client = models.ForeignKey(Client, verbose_name='Cliente', on_delete=models.CASCADE, null=True)
 
     class Meta:
         verbose_name = 'Reserva'

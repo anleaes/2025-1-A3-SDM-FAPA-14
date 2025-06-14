@@ -6,8 +6,8 @@ from hosting.models import Hosting
 class Review(models.Model):
     rating = models.IntegerField('Avaliação')
     comment = models.TextField('Comentário', null=True)
-    client = models.ForeignKey(Client, on_delete=models.CASCADE, null=True)
-    hosting = models.ForeignKey(Hosting, on_delete=models.CASCADE, null=True)
+    client = models.ForeignKey(Client, verbose_name='Cliente', on_delete=models.CASCADE, null=True)
+    hosting = models.ForeignKey(Hosting, verbose_name='Hospedagem', on_delete=models.CASCADE, null=True)
 
     class Meta:
         verbose_name = 'Avaliação'
