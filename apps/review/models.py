@@ -4,10 +4,10 @@ from hosting.models import Hosting
 
 # Create your models here.
 class Review(models.Model):
-    rating = models.IntegerField('Avaliação', default=0)
-    comment = models.TextField('Comentário', blank=True, null=True)
-    client = models.ForeignKey(Client, on_delete=models.CASCADE, null=True, blank=True)
-    hosting = models.ForeignKey(Hosting, on_delete=models.CASCADE, null=True, blank=True)
+    rating = models.IntegerField('Avaliação')
+    comment = models.TextField('Comentário', null=True)
+    client = models.ForeignKey(Client, on_delete=models.CASCADE, null=True)
+    hosting = models.ForeignKey(Hosting, on_delete=models.CASCADE, null=True)
 
     class Meta:
         verbose_name = 'Avaliação'
