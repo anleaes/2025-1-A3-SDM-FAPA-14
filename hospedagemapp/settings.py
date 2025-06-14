@@ -42,15 +42,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_filters',
     'rest_framework',
-    'client.apps.ClientConfig',
-    'hosting.apps.HostingConfig',
-    'category.apps.CategoryConfig',
-    'reservation.apps.ReservationConfig',
-    'reservationhosting.apps.ReservationHostingConfig',
-    'review.apps.ReviewConfig',
     'address.apps.AddressConfig',
     'amenity.apps.AmenityConfig',
+    'category.apps.CategoryConfig',
+    'client.apps.ClientConfig',
+    'hosting.apps.HostingConfig',
+    'review.apps.ReviewConfig',
+    'reservation.apps.ReservationConfig',
+    'reservationhosting.apps.ReservationHostingConfig',
 ]
 
 MIDDLEWARE = [
