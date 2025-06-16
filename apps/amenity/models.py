@@ -6,7 +6,7 @@ class Amenity(models.Model):
     description = models.TextField('Descrição', max_length=100)
     is_available = models.BooleanField('Disponível', default=True)
     extra_cost = models.DecimalField('Custo Extra', max_digits=10, decimal_places=2)
-    photo = models.ImageField('Foto', upload_to='amenity/photos')
+    photo = models.ImageField('Foto', upload_to='amenity/photos', null=True)
 
     class Meta:
         verbose_name = 'Comodidade'

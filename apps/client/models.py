@@ -11,6 +11,8 @@ class Client(models.Model):
         ('O', 'Outro'),
     ]
     gender = models.CharField('Gênero', max_length=1, choices=GENDER_CHOICES)
+    photo = models.ImageField('Foto', upload_to='clients/photos', null=True)
+    doc = models.FileField('Documentos', upload_to='clients/docs', null=True)
 
     class Meta:
         verbose_name = 'Cliente'
