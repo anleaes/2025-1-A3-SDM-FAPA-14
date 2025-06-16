@@ -27,6 +27,7 @@ class Reservation(models.Model):
             ('PAYMENT_SLIP', 'Boleto')
         ]
     )
+    doc = models.FileField('Documento', upload_to='reservation/docs', null=True)
     client = models.ForeignKey(Client, verbose_name='Cliente', on_delete=models.CASCADE, null=True)
 
     class Meta:
