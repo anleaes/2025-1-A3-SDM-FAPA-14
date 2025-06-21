@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'review.apps.ReviewConfig',
     'reservation.apps.ReservationConfig',
     'reservationhosting.apps.ReservationHostingConfig',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
